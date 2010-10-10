@@ -75,3 +75,23 @@ footer h2{
 footer p{
   padding:5px;
 }
+
+.ribbon {
+  background-color: #968AD8;
+  overflow: hidden;
+  position: absolute;
+  left: -3em;
+  top: 2.5em;
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.ribbon a {
+  border: 1px solid #faa;
+  color: #fff;
+  display: block;
+  font: bold 81.25% 'Helvetiva Neue', Helvetica, Arial, sans-serif;
+  margin: 0.05em 0;
+  padding: 0.5em 3.5em;
+  text-align: center;
+  text-decoration: none;
+}
