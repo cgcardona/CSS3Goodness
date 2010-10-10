@@ -11,11 +11,9 @@ body {
 #left{
   float:left;
   width:400px;
-  background-color:blue;
 }
 
 #right{
   float:right;
   width:500px;
-  background-color:red;
 }
