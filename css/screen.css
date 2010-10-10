@@ -20,6 +20,7 @@ header h2{
 }
 
 #left{
+  padding:20px;
   float:left;
   width:400px;
 }
@@ -38,6 +39,11 @@ header h2{
 }
 
 #right{
+  padding:20px;
   float:right;
-  width:500px;
+  width:400px;
+}
+
+footer{
+  clear:both;
 }
