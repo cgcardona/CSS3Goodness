@@ -30,6 +30,10 @@ header h2{
   color:#fff;
 }
 
+#left #dynamic p{
+  margin:5px;
+}
+
 #right{
   float:right;
   width:500px;
