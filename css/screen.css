@@ -9,6 +9,16 @@ body {
   margin:40px auto 0;
 }
 
+header h1{
+  color:#2B1E73;
+  font-size:3.25em;
+}
+
+header h2{
+  color:#7D1C60;
+  font-size:2.25em;
+}
+
 #left{
   float:left;
   width:400px;
