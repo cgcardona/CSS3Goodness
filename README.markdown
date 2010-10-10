@@ -37,9 +37,9 @@ Most recent versions of
 TODO
 ----
 
-- Firefox is a super fail. I think it isn't recognizing the HTML5 elements. I
-guess I could change all of the html5 elements to divs with an id of the html5
-element name.
+- Firefox is currently no dynamically restyling #dynamic in anything other than
+text-shadow. I need to do some fancy footwork here to feed -moz- to firefox for
+the other two styles.
 - I would like to be more granular with the input fields and provide an input
 field for each property. That will mean having 4 input fields for drop shadows
 and text drop shadows.
