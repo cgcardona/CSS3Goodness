@@ -9,7 +9,7 @@ body {
   margin:20px auto 0;
 }
 
-header{
+#header{
   padding:20px;
   background-color:#E09CCB;
   border-style:solid;
@@ -18,13 +18,13 @@ header{
   border-radius:30px;
 }
 
-header h1{
+#header h1{
   color:#2B1E73;
   font-size:3.25em;
   text-shadow:#968AD8 4px 4px 5px;
 }
 
-header h2{
+#header h2{
   color:#7D1C60;
   font-size:2.25em;
   text-shadow:#968AD8 4px 4px 5px;
