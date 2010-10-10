@@ -88,6 +88,34 @@
       <script src="http://code.jquery.com/jquery-latest.js"></script>
       <script>
         $(document).ready(function() {
+          $("#submit-button").click(function() {
+            // get input value and assign to var
+            var newBorderRadiusValue = $("#newBorderRadiusInput").val()
+
+            // get input value and assign to var
+            var newBoxShadowValue = $("#newBoxShadowInput").val()
+
+            // get input value and assign to var
+            var newTextShadowValue = $("#newTextShadowInput").val()
+
+            // change the border-radius value of #dynamic
+            $("#dynamic").css("border-radius", newBorderRadiusValue + "px")
+
+            // change the -webkit-box-shadow value of #dynamic
+            $("#dynamic").css("webkit-box-shadow", newBoxShadowValue)
+
+            // change the text-shadow value of #dynamic
+            $("#dynamic").css("text-shadow", newTextShadowValue)
+
+            // call refreshFooter()
+            refreshFooter()
+          }) // end of click
+          refreshFooter()
+        })
+      </script>
+      <script>
+        function refreshFooter() {
+
             // get #dynamic's current style's and assign them to vars
             var borderTopLeftRadiusValue = $("#dynamic").css("border-top-left-radius")
             var borderTopRightRadiusValue = $("#dynamic").css("border-top-right-radius")
@@ -108,11 +136,7 @@
             $("#border-bottom-left-radius span").html(borderTopLeftRadiusValue)
             $("#box-shadow span").html(boxShadowValue)
             $("#text-shadow span").html(textShadowValue)
-        })
-      </script>
-      <script>
-        function refreshFooter() {
-        
+
         }  // end of refreshFooter()
       </script>
   </body>
