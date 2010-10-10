@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <title></title>
+      <link rel="stylesheet" href="css/reset.css" media="screen">
+      <link rel="stylesheet" href="css/screen.css" media="screen">
+  </head>
+  <body>
+      <div id="container">
+          <header>
+            <h1>
+              CSS3Goodness
+            </h1>
+            <h2>
+                Feast your eyes on this mortal!
+            </h2>
+            <h2>
+            All the CSS3 your puny mind can handle!
+            </h2>
+          </header>
+          <section id="left">
+            <section id="dynamic">
+              <p>
+                This section will be dynamically styled depending on values you
+                put in the form on the right.
+              </p>
+              <p>
+                And a little lipsum. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              </p>
+            </section><!-- end of dynamic section -->
+          </section><!-- end of left section -->
+          <section id="right">
+            <section id="form-section">
+              <form id="form">
+                <p>
+                </p>
+                <!-- input for border-radius -->
+                <p>
+                  Rounded Corners:
+                <input type="text" id="newBorderRadiusInput" placeholder="6">  px
+                </p>
+                <!-- input for box-shadow -->
+                <p>
+                  Drop Shadow:
+                <input type="text" id="newBoxShadowInput" placeholder="#000 1px 1px 20px">  ex: #000 1px 1px 20px
+                </p>
+                <!-- input for text-shadow -->
+                <p>
+                  Text Shadow:
+                <input type="text" id="newTextShadowInput" placeholder="#000 1px 1px 1px">  ex: #000 1px 1px 1px
+                </p>
+                <input type="button" id="submit-button" value="update">
+              </form>
+            </section><!-- end of form section -->
+          </section><!-- end of right section -->
+          <footer id="codeDumpZone">
+            <h2>
+              Here is your code. Now leave this place!
+            </h2>
+          <code>
+          <p id="border-top-left-radius">
+          border-top-left-radius: <span></span>;
+          </p>
+          <p id="border-top-right-radius">
+          border-top-right-radius: <span></span>;
+          </p>
+          <p id="border-bottom-right-radius">
+          border-bottom-right-radius: <span></span>;
+          </p>
+          <p id="border-bottom-left-radius">
+          border-bottom-left-radius: <span></span>;
+          </p>
+          <p id="box-shadow">
+          (-webkit- or -moz-)box-shadow: <span></span>;
+          </p>
+          <p id="text-shadow">
+          text-shadow: <span></span>;
+          </p>
+      </code>
+          </footer>
+          <div class="ribbon">
+            <a href="http://github.com/cgcardona/CSS3Goodness/" rel="me">Fork me on GitHub</a>
+          </div>
+      </div><!-- end of container div -->
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+      <script>
+        $(document).ready(function() {
+          $("#submit-button").click(function() {
+            // get input value and assign to var
+            var newBorderRadiusValue = $("#newBorderRadiusInput").val()
+
+            // get input value and assign to var
+            var newBoxShadowValue = $("#newBoxShadowInput").val()
+
+            // get input value and assign to var
+            var newTextShadowValue = $("#newTextShadowInput").val()
+
+            // change the border-radius value of #dynamic
+            $("#dynamic").css("border-radius", newBorderRadiusValue + "px")
+
+            // change the -webkit-box-shadow value of #dynamic
+            $("#dynamic").css("webkit-box-shadow", newBoxShadowValue)
+
+            // change the text-shadow value of #dynamic
+            $("#dynamic").css("text-shadow", newTextShadowValue)
+
+            // call refreshFooter()
+            refreshFooter()
+          }) // end of click
+          refreshFooter()
+        })
+      </script>
+      <script>
+        function refreshFooter() {
+
+            // get #dynamic's current style's and assign them to vars
+            var borderTopLeftRadiusValue = $("#dynamic").css("border-top-left-radius")
+            var borderTopRightRadiusValue = $("#dynamic").css("border-top-right-radius")
+            var borderBottomRightRadiusValue = $("#dynamic").css("border-bottom-right-radius")
+            var borderBottomLeftRadiusValue = $("#dynamic").css("border-bottom-left-radius")
+
+            // box-shadow value assigned to vars
+            var boxShadowValue = $("#dynamic").css("-webkit-box-shadow")
+
+            // text-shadow value assigned to var
+            var textShadowValue = $("#dynamic").css("text-shadow")
+
+            // print values to screen for the user to copy/paste on their way to
+            // victory
+            $("#border-top-left-radius span").html(borderTopLeftRadiusValue)
+            $("#border-top-right-radius span").html(borderTopLeftRadiusValue)
+            $("#border-bottom-right-radius span").html(borderTopLeftRadiusValue)
+            $("#border-bottom-left-radius span").html(borderTopLeftRadiusValue)
+            $("#box-shadow span").html(boxShadowValue)
+            $("#text-shadow span").html(textShadowValue)
+
+        }  // end of refreshFooter()
+      </script>
+  </body>
+</html>
