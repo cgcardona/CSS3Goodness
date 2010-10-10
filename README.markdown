@@ -13,3 +13,8 @@ plan to focus on
 - border-radius (rounded corners) 
 - box-shadow (drop shadow)
 - text-shadow (text drop shadow).
+
+Caveats
+-------
+
+FYI - All of the action sans this README file is happening on the dev branch.
