@@ -32,6 +32,8 @@ header h2{
   border-radius:6px;
   -webkit-box-shadow:#000 0 0 20px;
   text-shadow:#000 1px 1px 1px;
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 45px;
 }
 
 #left #dynamic p{
