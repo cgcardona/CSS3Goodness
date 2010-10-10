@@ -1,7 +1,7 @@
 body {
   font-family: "helvetica neue", helvetica, arial, sans-serif;
   text-rendering: optimizeLegibility;
-  background-color:#FFFA73;
+  background-color:#FFFED8;
 }
 
 #container{
@@ -11,7 +11,7 @@ body {
 
 #header{
   padding:20px;
-  background-color:#E09CCB;
+  background-color:#E4C1DA;
   border-style:solid;
   border-width:6px;
   border-color:#968AD8;
@@ -61,7 +61,7 @@ body {
 #footer{
   clear:both;
   padding:20px;
-  background-color:#E09CCB;
+  background-color:#E4C1DA;
   border-style:solid;
   border-width:6px;
   border-color:#968AD8;
