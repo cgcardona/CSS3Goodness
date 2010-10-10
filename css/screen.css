@@ -55,7 +55,7 @@ body {
   width:400px;
 }
 
-footer{
+#footer{
   clear:both;
   padding:20px;
   background-color:#E09CCB;
@@ -65,14 +65,14 @@ footer{
   border-radius:30px;
 }
 
-footer h2{
+#footer h2{
   margin-bottom:10px;
   color:#2B1E73;
   font-size:2.25em;
   text-shadow:#968AD8 4px 4px 5px;
 }
 
-footer p{
+#footer p{
   padding:5px;
 }
 
