@@ -88,58 +88,7 @@
           </div>
       </div><!-- end of container div -->
       <script src="http://code.jquery.com/jquery-latest.js"></script>
-      <script>
-        $(document).ready(function() {
-          $("#submit-button").click(function() {
-            // get input value and assign to var
-            var newBorderRadiusValue = $("#newBorderRadiusInput").val()
-
-            // get input value and assign to var
-            var newBoxShadowValue = $("#newBoxShadowInput").val()
-
-            // get input value and assign to var
-            var newTextShadowValue = $("#newTextShadowInput").val()
-
-            // change the border-radius value of #dynamic
-            $("#dynamic").css("border-radius", newBorderRadiusValue + "px")
-
-            // change the -webkit-box-shadow value of #dynamic
-            $("#dynamic").css("webkit-box-shadow", newBoxShadowValue)
-
-            // change the text-shadow value of #dynamic
-            $("#dynamic").css("text-shadow", newTextShadowValue)
-
-            // call refreshFooter()
-            refreshFooter()
-          }) // end of click
-          refreshFooter()
-        })
-      </script>
-      <script>
-        function refreshFooter() {
-
-            // get #dynamic's current style's and assign them to vars
-            var borderTopLeftRadiusValue = $("#dynamic").css("border-top-left-radius")
-            var borderTopRightRadiusValue = $("#dynamic").css("border-top-right-radius")
-            var borderBottomRightRadiusValue = $("#dynamic").css("border-bottom-right-radius")
-            var borderBottomLeftRadiusValue = $("#dynamic").css("border-bottom-left-radius")
-
-            // box-shadow value assigned to vars
-            var boxShadowValue = $("#dynamic").css("-webkit-box-shadow")
-
-            // text-shadow value assigned to var
-            var textShadowValue = $("#dynamic").css("text-shadow")
-
-            // print values to screen for the user to copy/paste on their way to
-            // victory
-            $("#border-top-left-radius span").html(borderTopLeftRadiusValue)
-            $("#border-top-right-radius span").html(borderTopLeftRadiusValue)
-            $("#border-bottom-right-radius span").html(borderTopLeftRadiusValue)
-            $("#border-bottom-left-radius span").html(borderTopLeftRadiusValue)
-            $("#box-shadow span").html(boxShadowValue)
-            $("#text-shadow span").html(textShadowValue)
-
-        }  // end of refreshFooter()
-      </script>
+      <script src="js/scripts.js"></script>
+      <script src="js/refreshfooter.js"></script>
   </body>
 </html>
