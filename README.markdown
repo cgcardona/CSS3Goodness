@@ -40,9 +40,10 @@ TODO
 - Firefox is currently no dynamically restyling #dynamic in anything other than
 text-shadow. I need to do some fancy footwork here to feed -moz- to firefox for
 the other two styles.
-- I would like to be more granular with the input fields and provide an input
-field for each property. That will mean having 4 input fields for drop shadows
-and text drop shadows.
+- I want to make the text-shadow input more granular similar to box shadow which
+would mean creating 4 inputs for it as well.
+- Currently if the user doesn't enter in all of the values for the box shadow it
+won't take effect.
 
 Caveats
 -------
