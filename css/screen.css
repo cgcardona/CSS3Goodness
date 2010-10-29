@@ -23,7 +23,7 @@ body {
   width:400px;
 }
 
-#left #dynamic{
+#right #dynamic{
   background-color:#968AD8;
   padding:20px;
   color:#fff;
@@ -34,7 +34,7 @@ body {
   text-shadow:#000 1px 1px 1px;
 }
 
-#left #dynamic p{
+#right #dynamic p{
   margin:5px;
 }
 
