@@ -1,3 +1,13 @@
+function checkForInput(inputValue, placeholderValue) {
+  // check to see if the form input has a value
+  if (inputValue === '') {
+     postFunctionInputValue = placeholderValue;
+  } else {
+     postFunctionInputValue = inputValue;
+  }
+    return postFunctionInputValue;
+}
+
  $(document).ready(function() {
     $("#submit-button").click(function() {
       // get input value and assign to var
