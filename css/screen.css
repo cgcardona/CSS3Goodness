@@ -26,14 +26,14 @@ body {
 }
 
 #right #dynamic{
-  background-color:#968AD8;
+  background-color:#ccc;
   padding:20px;
-  color:#fff;
+  color:#000;
   border-radius:6px;
   -moz-border-radius:6px;
   -webkit-box-shadow:#000 1px 1px 20px;
   -moz-box-shadow:#000 1px 1px 20px;
-  text-shadow:#000 1px 1px 1px;
+  text-shadow:#aaa 1px 1px 1px;
 }
 
 #right #dynamic p{
