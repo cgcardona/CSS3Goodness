@@ -75,7 +75,7 @@ body {
   -webkit-transform: rotate(-45deg);
 }
 .ribbon a {
-  border: 1px solid #faa;
+  border: 1px solid #999;
   color: #fff;
   display: block;
   font: bold 81.25% 'Helvetiva Neue', Helvetica, Arial, sans-serif;
