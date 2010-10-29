@@ -37,6 +37,8 @@ Most recent versions of
 TODO
 ----
 
+- Make the controls on text-shadow more granular similar to box-shadow
+- Apply checkForInput() to text-shadow
 - Firefox is currently no dynamically restyling #dynamic in anything other than
 text-shadow. I need to do some fancy footwork here to feed -moz- to firefox for
 the other two styles.
