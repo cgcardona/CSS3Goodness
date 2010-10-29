@@ -4,7 +4,7 @@ CSS3Goodness
 Purpose
 -------
 
-[CSS3 Goodness](http://css3goodness) is an HTML5/CSS3/jQuery webapp that allows a user to test CSS3 goodies on the fly and then have the code generated and displayed on the screen.
+[CSS3 Goodness](http://css3goodness.com) is an HTML5/CSS3/jQuery webapp that allows a user to test CSS3 goodies on the fly and then have the code generated and displayed on the screen.
 
 Hopefully over time I can grow this to include many CSS3 goodies but initially
 it supports:
