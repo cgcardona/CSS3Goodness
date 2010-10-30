@@ -9,19 +9,55 @@ function checkForInput(inputValue, placeholderValue) {
 }
 
  $(document).ready(function() {
+ 
+   var roundedCornersCurrentSliderValue = "";
+   var newBoxShadowXInputCurrentSliderValue = "";
 
   $("#roundedCornersSlider").slider({
      min: 1,
-     max: 100,
+     max: 85,
      stop: function(event, ui) {
-       currentSliderValue = ui.value;
+       roundedCornersCurrentSliderValue = ui.value;
+       $("#afterSliderRoundedCornersValue").text(roundedCornersCurrentSliderValue);
        $("#submit-button").click();
     }
   });
+
+  $("#newBoxShadowXInputSlider").slider({
+     min: 1,
+     max: 85,
+     stop: function(event, ui) {
+       newBoxShadowXInputCurrentSliderValue = ui.value;
+      //  $("#afterSliderRoundedCornersValue").text(currentSliderValue);
+       $("#submit-button").click();
+    }
+  });
+
+    $("#color").click(function() {
+      $("#colorpicker").slideDown();
+      $("#showpicker1").text("Hide Colorpicker");
+      return false;
+    });
+
+    $("#color").blur(function() {
+      $("#colorpicker").slideUp();
+      $("#showpicker1").text("Show Colorpicker");
+    });
+
+    $("#showpicker1").toggle(function() {
+      $("#colorpicker").slideDown();
+      $("#showpicker1").text("Hide Colorpicker");
+    }, function() {
+      $("#colorpicker").slideUp();
+      $("#showpicker1").text("Show Colorpicker");
+    });
+
+    $('#colorpicker').farbtastic('#color');
+
     $("#submit-button").click(function() {
       // BORDER-RADIUS
       // get input value and assign to var
-      var newBorderRadiusValue = currentSliderValue;
+      var newBorderRadiusValue = roundedCornersCurrentSliderValue;
 
       // create placeholder var
       var newBorderRadiusPlaceholder = 6;
@@ -33,12 +69,12 @@ function checkForInput(inputValue, placeholderValue) {
       var postFunctionBorderRadiusValue = postFunctionInputValue;
 
       // BOX-SHADOW
-      var newBoxShadowColorValue = $("#newBoxShadowColorInput").val();
+      var newBoxShadowColorValue = $('#color').val();
       var newBoxShadowColorPlaceholder = '#000';
       checkForInput(newBoxShadowColorValue, newBoxShadowColorPlaceholder);
       var postFunctionBoxShadowColorValue = postFunctionInputValue;
 
-      var newBoxShadowXValue = $("#newBoxShadowXInput").val();
+      var newBoxShadowXValue = newBoxShadowXInputCurrentSliderValue + "px";
       var newBoxShadowXPlacholder = '1px';
       checkForInput(newBoxShadowXValue, newBoxShadowXPlacholder);
       var postFunctionBoxShadowXValue = postFunctionInputValue;
