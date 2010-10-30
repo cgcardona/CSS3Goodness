@@ -28,7 +28,15 @@ function checkForInput(inputValue, placeholderValue) {
      max: 85,
      stop: function(event, ui) {
        newBoxShadowXInputCurrentSliderValue = ui.value;
-      //  $("#afterSliderRoundedCornersValue").text(currentSliderValue);
+       $("#submit-button").click();
+    }
+  });
+
+  $("#newBoxShadowYInputSlider").slider({
+     min: 1,
+     max: 85,
+     stop: function(event, ui) {
+       newBoxShadowYInputCurrentSliderValue = ui.value;
        $("#submit-button").click();
     }
   });
@@ -79,7 +87,7 @@ function checkForInput(inputValue, placeholderValue) {
       checkForInput(newBoxShadowXValue, newBoxShadowXPlacholder);
       var postFunctionBoxShadowXValue = postFunctionInputValue;
 
-      var newBoxShadowYValue = $("#newBoxShadowYInput").val();
+      var newBoxShadowYValue = newBoxShadowYInputCurrentSliderValue + "px";
       var newBoxShadowYPlacholder = '1px';
       checkForInput(newBoxShadowYValue, newBoxShadowYPlacholder);
       var postFunctionBoxShadowYValue = postFunctionInputValue;
