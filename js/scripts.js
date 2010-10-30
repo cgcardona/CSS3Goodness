@@ -103,6 +103,28 @@ function checkForInput(inputValue, placeholderValue) {
 
     $('#colorpicker').farbtastic('#color');
 
+    // color picker 2
+    $("#color2").click(function() {
+      $("#colorpicker2").slideDown();
+      $("#showpicker2").text("Hide Colorpicker");
+      return false;
+    });
+
+    $("#color2").blur(function() {
+      $("#colorpicker2").slideUp();
+      $("#showpicker2").text("Show Colorpicker");
+    });
+
+    $("#showpicker2").toggle(function() {
+      $("#colorpicker2").slideDown();
+      $("#showpicker2").text("Hide Colorpicker");
+    }, function() {
+      $("#colorpicker2").slideUp();
+      $("#showpicker2").text("Show Colorpicker");
+    });
+
+    $('#colorpicker2').farbtastic('#color2');
+
     $("#submit-button").click(function() {
       // BORDER-RADIUS
       // get input value and assign to var
