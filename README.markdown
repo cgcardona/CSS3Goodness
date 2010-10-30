@@ -16,14 +16,15 @@ it supports:
 How to use
 ----------
 
-Visit the page in any friendly webkit browser and you will see a purple section
-with rounded corners, a drop shadow, and text drop shadow. 
+Visit the page in any friendly webkit browser and along the right of the screen
+you will see a grey div with rounded corners, a drop shadow, and text drop shadow. 
 
-On the right side of the screen you see a form with 3 input fields. Each of the
-fields controls a different CSS3 style
+On the left side of the screen are sliders for adjusting the rounded corners,
+drop shadow, and text drop shadow. There are also color pickers for getting the
+exact color you want.
 
-Enter a new value and hit the update button. The purple section on the left will
-be dynamically restyled and the CSS code will be printed at the bottom of the
+Move the sliders or use the color picker and the grey section on the left will
+be dynamically restyled and the CSS will be printed at the bottom of the
 screen.
 
 Supported Browsers
@@ -37,15 +38,13 @@ Most recent versions of
 TODO
 ----
 
-- Make the controls on text-shadow more granular similar to box-shadow
-- Apply checkForInput() to text-shadow
-- Firefox is currently no dynamically restyling #dynamic in anything other than
+- There is some bug that is causing the user to need to change all three sliders
+for either drop shadow or text shadow before the dynamic styling takes effect. I
+need to figure out what is going on here. Place to start is in firebug/webkit js
+debugger.
+- Firefox is currently not dynamically restyling #dynamic in anything other than
 text-shadow. I need to do some fancy footwork here to feed -moz- to firefox for
 the other two styles.
-- I want to make the text-shadow input more granular similar to box shadow which
-would mean creating 4 inputs for it as well.
-- Currently if the user doesn't enter in all of the values for the box shadow it
-won't take effect.
 
 Caveats
 -------
