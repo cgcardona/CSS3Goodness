@@ -25,8 +25,8 @@ function checkForInput(inputValue, placeholderValue) {
   });
 
   $("#newBoxShadowXInputSlider").slider({
-     min: 1,
-     max: 85,
+     min: -100,
+     max: 100,
      stop: function(event, ui) {
        newBoxShadowXInputCurrentSliderValue = ui.value;
        $("#submit-button").click();
@@ -34,10 +34,19 @@ function checkForInput(inputValue, placeholderValue) {
   });
 
   $("#newBoxShadowYInputSlider").slider({
-     min: 1,
-     max: 85,
+     min: -100,
+     max: 100,
      stop: function(event, ui) {
        newBoxShadowYInputCurrentSliderValue = ui.value;
+       $("#submit-button").click();
+    }
+  });
+
+  $("#newBoxShadowFadeSlider").slider({
+     min: 1,
+     max: 100,
+     stop: function(event, ui) {
+       newBoxShadowFadeCurrentSliderValue = ui.value;
        $("#submit-button").click();
     }
   });
