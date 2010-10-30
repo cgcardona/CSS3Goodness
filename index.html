@@ -3,12 +3,16 @@
   <head>
       <meta charset="utf-8">
       <meta name="description" content="">
-      <title></title>
+      <title>CSS3 Goodness</title>
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
       <link rel="stylesheet" href="css/reset.css" media="screen">
-      <link rel="stylesheet" href="css/screen.css" media="screen">
+      <link rel="stylesheet" href="css/styles.css" media="screen">
   </head>
   <body>
       <div id="container">
+          <div class="ribbon">
+            <a href="http://github.com/cgcardona/CSS3Goodness/" rel="me">Fork me on GitHub</a>
+          </div>
           <div id="header">
             <h1>
               CSS3Goodness
@@ -21,16 +25,20 @@
                 </p>
                 <!-- input for border-radius -->
                 <p>
-                <strong> Rounded Corners:</strong>
-                <input type="text" id="newBorderRadiusInput" placeholder="6">  px
+                <fieldset>
+                    <legend>Rounded Corners</legend>
+                    <input type="number" id="newBorderRadiusInput" placeholder="6">  px
+                </fieldset>
                 </p>
                 <!-- input for box-shadow -->
                 <p>
-                <strong>Drop Shadow:</strong> <br>
-                Shadow Color (hex value): <input type="text" id="newBoxShadowColorInput" placeholder="#000">  ex: #000<br>
-                X axis: <input type="text" id="newBoxShadowXInput" placeholder="1px"> ex: 1px<br>
-                Y axis: <input type="text" id="newBoxShadowYInput" placeholder="1px"> ex: 1px<br>
-                Fade: <input type="text" id="newBoxShadowFadeInput" placeholder="20px"> ex: 20px
+                <fieldset>
+                    <legend>Drop Shadow</legend>
+                      Shadow Color (hex value): <input type="text" id="newBoxShadowColorInput" placeholder="#000">  ex: #000<br>
+                      X axis: <input type="text" id="newBoxShadowXInput" placeholder="1px"> ex: 1px<br>
+                      Y axis: <input type="text" id="newBoxShadowYInput" placeholder="1px"> ex: 1px<br>
+                      Fade: <input type="text" id="newBoxShadowFadeInput" placeholder="20px"> ex: 20px
+                </fieldset>
                 </p>
                 <!-- input for text-shadow -->
                 <p>
@@ -80,12 +88,10 @@
           </p>
       </code>
     </div><!--end of footer div-->
-          <div class="ribbon">
-            <a href="http://github.com/cgcardona/CSS3Goodness/" rel="me">Fork me on GitHub</a>
-          </div>
-      </div><!-- end of container div -->
-      <script src="http://code.jquery.com/jquery-latest.js"></script>
-      <script src="js/scripts.js"></script>
-      <script src="js/refreshfooter.js"></script>
+    </div><!-- end of container div -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/refreshfooter.js"></script>
+    <!-- Jah Love Eternal! Om -->
   </body>
 </html>
