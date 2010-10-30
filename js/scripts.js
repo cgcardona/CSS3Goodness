@@ -9,6 +9,15 @@ function checkForInput(inputValue, placeholderValue) {
 }
 
  $(document).ready(function() {
+
+  $("#roundedCornersSlider").slider({
+     min: 1,
+     max: 100,
+     stop: function(event, ui) {
+       currentSliderValue = ui.value;
+       $("#submit-button").click();
+    }
+  });
     $("#submit-button").click(function() {
       // BORDER-RADIUS
       // get input value and assign to var
