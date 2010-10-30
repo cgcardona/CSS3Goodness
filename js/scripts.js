@@ -55,6 +55,33 @@ function checkForInput(inputValue, placeholderValue) {
     }
   });
 
+  $("#newTextShadowXInputSlider").slider({
+     min: -100,
+     max: 100,
+     stop: function(event, ui) {
+       newTextShadowXInputCurrentSliderValue = ui.value;
+       $("#submit-button").click();
+    }
+  });
+
+  $("#newTextShadowYInputSlider").slider({
+     min: -100,
+     max: 100,
+     stop: function(event, ui) {
+       newTextShadowYInputCurrentSliderValue = ui.value;
+       $("#submit-button").click();
+    }
+  });
+
+  $("#newTextShadowFadeSlider").slider({
+     min: 1,
+     max: 10,
+     stop: function(event, ui) {
+       newTextShadowFadeCurrentSliderValue = ui.value;
+       $("#submit-button").click();
+    }
+  });
+
     $("#color").click(function() {
       $("#colorpicker").slideDown();
       $("#showpicker1").text("Hide Colorpicker");
