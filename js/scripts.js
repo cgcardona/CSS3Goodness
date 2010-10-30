@@ -21,7 +21,7 @@ function checkForInput(inputValue, placeholderValue) {
     $("#submit-button").click(function() {
       // BORDER-RADIUS
       // get input value and assign to var
-      var newBorderRadiusValue = $("#newBorderRadiusInput").val();
+      var newBorderRadiusValue = currentSliderValue;
 
       // create placeholder var
       var newBorderRadiusPlaceholder = 6;
