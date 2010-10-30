@@ -163,8 +163,31 @@ function checkForInput(inputValue, placeholderValue) {
       var newBoxShadowValue = postFunctionBoxShadowColorValue + " " + postFunctionBoxShadowXValue + 
       " " + postFunctionBoxShadowYValue + " " + postFunctionBoxShadowFadeValue;
 
+      // TEXT-SHADOW
+      var newTextShadowColorValue = $('#color2').val();
+      var newTextShadowColorPlaceholder = '#000';
+      checkForInput(newTextShadowColorValue, newTextShadowColorPlaceholder);
+      var postFunctionTextShadowColorValue = postFunctionInputValue;
+
+      var newTextShadowXValue = newTextShadowXInputCurrentSliderValue + "px";
+      var newTextShadowXPlacholder = '1px';
+      checkForInput(newTextShadowXValue, newTextShadowXPlacholder);
+      var postFunctionTextShadowXValue = postFunctionInputValue;
+
+      var newTextShadowYValue = newTextShadowYInputCurrentSliderValue + "px";
+      var newTextShadowYPlacholder = '1px';
+      checkForInput(newTextShadowYValue, newTextShadowYPlacholder);
+      var postFunctionTextShadowYValue = postFunctionInputValue;
+
+      var newTextShadowFadeValue = newTextShadowFadeCurrentSliderValue + "px";
+      var newTextShadowFadePlaceholder = '20px';
+      checkForInput(newTextShadowFadeValue, newTextShadowFadePlaceholder);
+      var postFunctionTextShadowFadeValue = postFunctionInputValue;
+
+      var newTextShadowValue = postFunctionTextShadowColorValue + " " + postFunctionTextShadowXValue + 
+      " " + postFunctionTextShadowYValue + " " + postFunctionTextShadowFadeValue;
+      // old line below here
       // get input value and assign to var
-      var newTextShadowValue = $("#newTextShadowInput").val();
 
       // change the border-radius value of #dynamic
       $("#dynamic").css("border-radius", postFunctionBorderRadiusValue + "px");
