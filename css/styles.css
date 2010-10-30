@@ -49,7 +49,17 @@ body {
           padding: 5px 10px; }
         body #container #left fieldset #ds-four {
           padding: 5px 10px; }
+        body #container #left fieldset #tds-one {
+          padding: 5px 10px; }
+        body #container #left fieldset #tds-two {
+          padding: 5px 10px; }
+        body #container #left fieldset #tds-three {
+          padding: 5px 10px; }
+        body #container #left fieldset #tds-four {
+          padding: 5px 10px; }
       body #container #left #fs-two {
+        padding-bottom: 20px; }
+      body #container #left #fs-three {
         padding-bottom: 20px; }
     body #container #right {
       padding: 20px;

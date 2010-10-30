@@ -14,6 +14,11 @@ function checkForInput(inputValue, placeholderValue) {
    var newBoxShadowXInputCurrentSliderValue = "";
    var newBoxShadowYInputCurrentSliderValue = "";
    var newBoxShadowFadeCurrentSliderValue = "";
+   var newTextShadowXInputCurrentSliderValue ="";
+   var newTextShadowYInputCurrentSliderValue = "";
+   var newTextShadowFadeCurrentSliderValue = "";
+
+
   $("#roundedCornersSlider").slider({
      min: 1,
      max: 85,
@@ -50,6 +55,33 @@ function checkForInput(inputValue, placeholderValue) {
     }
   });
 
+  $("#newTextShadowXInputSlider").slider({
+     min: -100,
+     max: 100,
+     stop: function(event, ui) {
+       newTextShadowXInputCurrentSliderValue = ui.value;
+       $("#submit-button").click();
+    }
+  });
+
+  $("#newTextShadowYInputSlider").slider({
+     min: -100,
+     max: 100,
+     stop: function(event, ui) {
+       newTextShadowYInputCurrentSliderValue = ui.value;
+       $("#submit-button").click();
+    }
+  });
+
+  $("#newTextShadowFadeSlider").slider({
+     min: 1,
+     max: 10,
+     stop: function(event, ui) {
+       newTextShadowFadeCurrentSliderValue = ui.value;
+       $("#submit-button").click();
+    }
+  });
+
     $("#color").click(function() {
       $("#colorpicker").slideDown();
       $("#showpicker1").text("Hide Colorpicker");
@@ -70,6 +102,28 @@ function checkForInput(inputValue, placeholderValue) {
     });
 
     $('#colorpicker').farbtastic('#color');
+
+    // color picker 2
+    $("#color2").click(function() {
+      $("#colorpicker2").slideDown();
+      $("#showpicker2").text("Hide Colorpicker");
+      return false;
+    });
+
+    $("#color2").blur(function() {
+      $("#colorpicker2").slideUp();
+      $("#showpicker2").text("Show Colorpicker");
+    });
+
+    $("#showpicker2").toggle(function() {
+      $("#colorpicker2").slideDown();
+      $("#showpicker2").text("Hide Colorpicker");
+    }, function() {
+      $("#colorpicker2").slideUp();
+      $("#showpicker2").text("Show Colorpicker");
+    });
+
+    $('#colorpicker2').farbtastic('#color2');
 
     $("#submit-button").click(function() {
       // BORDER-RADIUS
@@ -109,8 +163,31 @@ function checkForInput(inputValue, placeholderValue) {
       var newBoxShadowValue = postFunctionBoxShadowColorValue + " " + postFunctionBoxShadowXValue + 
       " " + postFunctionBoxShadowYValue + " " + postFunctionBoxShadowFadeValue;
 
+      // TEXT-SHADOW
+      var newTextShadowColorValue = $('#color2').val();
+      var newTextShadowColorPlaceholder = '#000';
+      checkForInput(newTextShadowColorValue, newTextShadowColorPlaceholder);
+      var postFunctionTextShadowColorValue = postFunctionInputValue;
+
+      var newTextShadowXValue = newTextShadowXInputCurrentSliderValue + "px";
+      var newTextShadowXPlacholder = '1px';
+      checkForInput(newTextShadowXValue, newTextShadowXPlacholder);
+      var postFunctionTextShadowXValue = postFunctionInputValue;
+
+      var newTextShadowYValue = newTextShadowYInputCurrentSliderValue + "px";
+      var newTextShadowYPlacholder = '1px';
+      checkForInput(newTextShadowYValue, newTextShadowYPlacholder);
+      var postFunctionTextShadowYValue = postFunctionInputValue;
+
+      var newTextShadowFadeValue = newTextShadowFadeCurrentSliderValue + "px";
+      var newTextShadowFadePlaceholder = '20px';
+      checkForInput(newTextShadowFadeValue, newTextShadowFadePlaceholder);
+      var postFunctionTextShadowFadeValue = postFunctionInputValue;
+
+      var newTextShadowValue = postFunctionTextShadowColorValue + " " + postFunctionTextShadowXValue + 
+      " " + postFunctionTextShadowYValue + " " + postFunctionTextShadowFadeValue;
+      // old line below here
       // get input value and assign to var
-      var newTextShadowValue = $("#newTextShadowInput").val();
 
       // change the border-radius value of #dynamic
       $("#dynamic").css("border-radius", postFunctionBorderRadiusValue + "px");
