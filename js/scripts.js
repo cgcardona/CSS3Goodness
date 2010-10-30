@@ -102,7 +102,7 @@ function checkForInput(inputValue, placeholderValue) {
       checkForInput(newBoxShadowYValue, newBoxShadowYPlacholder);
       var postFunctionBoxShadowYValue = postFunctionInputValue;
 
-      var newBoxShadowFadeValue = $("#newBoxShadowFadeInput").val();
+      var newBoxShadowFadeValue = newBoxShadowFadeCurrentSliderValue + "px";
       var newBoxShadowFadePlaceholder = '20px';
       checkForInput(newBoxShadowFadeValue, newBoxShadowFadePlaceholder);
       var postFunctionBoxShadowFadeValue = postFunctionInputValue;
