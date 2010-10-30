@@ -14,6 +14,11 @@ function checkForInput(inputValue, placeholderValue) {
    var newBoxShadowXInputCurrentSliderValue = "";
    var newBoxShadowYInputCurrentSliderValue = "";
    var newBoxShadowFadeCurrentSliderValue = "";
+   var newTextShadowXInputCurrentSliderValue ="";
+   var newTextShadowYInputCurrentSliderValue = "";
+   var newTextShadowFadeCurrentSliderValue = "";
+
+
   $("#roundedCornersSlider").slider({
      min: 1,
      max: 85,
