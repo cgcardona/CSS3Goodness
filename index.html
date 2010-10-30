@@ -7,6 +7,8 @@
       <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
       <link rel="stylesheet" href="css/reset.css" media="screen">
       <link rel="stylesheet" href="css/styles.css" media="screen">
+      <link rel="stylesheet" href="css/farbtastic.css" type="text/css">
+      <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
       <div id="container">
@@ -21,25 +23,26 @@
           <div id="left">
             <div id="form-section">
               <form id="form">
-                <p>
-                </p>
                 <!-- input for border-radius -->
-                <p>
-                <fieldset>
+                <fieldset id="fs-one">
                     <legend>Rounded Corners</legend>
-                    <input type="number" id="newBorderRadiusInput" placeholder="6">  px
+                    <div id="rc-one">
+                    <div id="roundedCornersSlider"></div></div>
                 </fieldset>
-                </p>
                 <!-- input for box-shadow -->
-                <p>
-                <fieldset>
+                <fieldset id="fs-two">
                     <legend>Drop Shadow</legend>
-                      Shadow Color (hex value): <input type="text" id="newBoxShadowColorInput" placeholder="#000">  ex: #000<br>
-                      X axis: <input type="text" id="newBoxShadowXInput" placeholder="1px"> ex: 1px<br>
-                      Y axis: <input type="text" id="newBoxShadowYInput" placeholder="1px"> ex: 1px<br>
-                      Fade: <input type="text" id="newBoxShadowFadeInput" placeholder="20px"> ex: 20px
+                    <div id="ds-one">Shadow Color <a id="showpicker1" href="#">Show
+                          Colorpicker</a><br>
+                      <input type="text" id="color" name="color" value="#123456" size="8">
+                      <div id="colorpicker" class="display-none"></div></div>
+                  <div id="ds-two">X axis:<br>
+                      <div id="newBoxShadowXInputSlider"></div></div>
+                  <div id="ds-three">Y axis:<br>
+                      <div id="newBoxShadowYInputSlider"></div></div>
+                  <div id="ds-four">Fade:<br>
+                      <div id="newBoxShadowFadeSlider"></div></div>
                 </fieldset>
-                </p>
                 <!-- input for text-shadow -->
                 <p>
                 <strong> Text Shadow:</strong>
@@ -89,9 +92,11 @@
       </code>
     </div><!--end of footer div-->
     </div><!-- end of container div -->
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/refreshfooter.js"></script>
+    <script type="text/javascript" src="js/farbtastic.js"></script>
     <!-- Jah Love Eternal! Om -->
   </body>
 </html>
