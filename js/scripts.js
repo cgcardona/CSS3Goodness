@@ -19,7 +19,6 @@ function checkForInput(inputValue, placeholderValue) {
      max: 85,
      stop: function(event, ui) {
        roundedCornersCurrentSliderValue = ui.value;
-       $("#afterSliderRoundedCornersValue").text(roundedCornersCurrentSliderValue);
        $("#submit-button").click();
     }
   });
