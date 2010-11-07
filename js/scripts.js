@@ -186,11 +186,13 @@ function checkForInput(inputValue, placeholderValue) {
 
       var newTextShadowValue = postFunctionTextShadowColorValue + " " + postFunctionTextShadowXValue + 
       " " + postFunctionTextShadowYValue + " " + postFunctionTextShadowFadeValue;
-      // old line below here
       // get input value and assign to var
 
       // change the border-radius value of #dynamic
       $("#dynamic").css("border-radius", postFunctionBorderRadiusValue + "px");
+
+       // -moz-border-radius for firefox rounded corners
+      $("#dynamic").css("-moz-border-radius", postFunctionBorderRadiusValue + "px");
 
       // change the -webkit-box-shadow value of #dynamic
       $("#dynamic").css("webkit-box-shadow", newBoxShadowValue);
