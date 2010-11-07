@@ -15,7 +15,7 @@ function checkForInput(inputValue, placeholderValue) {
    }
  
    if ($.browser.mozilla) {
-      var borderRadiusValue = $("#dynamic").css("background-color");
+      var borderRadiusValue = $("#dynamic").css("-moz-border-radius");
    }
       // box-shadow value assigned to vars
       var boxShadowValue = $("#dynamic").css("-webkit-box-shadow");
