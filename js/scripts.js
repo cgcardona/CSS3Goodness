@@ -195,7 +195,10 @@ function checkForInput(inputValue, placeholderValue) {
       $("#dynamic").css("-moz-border-radius", postFunctionBorderRadiusValue + "px");
 
       // change the -webkit-box-shadow value of #dynamic
-      $("#dynamic").css("webkit-box-shadow", newBoxShadowValue);
+      $("#dynamic").css("-webkit-box-shadow", newBoxShadowValue);
+
+      // change the -moz-box-shadow value of #dynamic
+      $("#dynamic").css("-moz-box-shadow", newBoxShadowValue);
 
       // change the text-shadow value of #dynamic
       $("#dynamic").css("text-shadow", newTextShadowValue);
