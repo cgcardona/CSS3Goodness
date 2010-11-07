@@ -9,9 +9,16 @@ function checkForInput(inputValue, placeholderValue) {
 }
   function refreshFooter() {
 
-      // get #dynamic's current style's and assign them to vars
+   // get #dynamic's current style's and assign them to vars
+   if ($.browser.webkit) {
       var borderRadiusValue = $("#dynamic").css("border-top-left-radius");
-
+      console.log(borderRadiusValue)
+   }
+ 
+   if ($.browser.mozilla) {
+      var borderRadiusValue = $("#dynamic").css("background-color");
+      console.log(borderRadiusValue)
+   }
       // box-shadow value assigned to vars
       var boxShadowValue = $("#dynamic").css("-webkit-box-shadow");
 
