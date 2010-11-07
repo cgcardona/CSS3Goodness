@@ -27,7 +27,12 @@ function checkForInput(inputValue, placeholderValue) {
   }  // end of refreshFooter()
 
  $(document).ready(function() {
+
+   if ($.browser.webkit) {
+   }
  
+   if ($.browser.mozilla) {
+   }
    var roundedCornersCurrentSliderValue = "";
    var newBoxShadowXInputCurrentSliderValue = "";
    var newBoxShadowYInputCurrentSliderValue = "";
