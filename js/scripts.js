@@ -7,9 +7,39 @@ function checkForInput(inputValue, placeholderValue) {
   }
     return postFunctionInputValue;
 }
+  function refreshFooter() {
+
+   // get #dynamic's current style's and assign them to vars
+   if ($.browser.webkit) {
+      var borderRadiusValue = $("#dynamic").css("border-top-left-radius");
+      console.log(borderRadiusValue)
+   }
+ 
+   if ($.browser.mozilla) {
+      var borderRadiusValue = $("#dynamic").css("background-color");
+      console.log(borderRadiusValue)
+   }
+      // box-shadow value assigned to vars
+      var boxShadowValue = $("#dynamic").css("-webkit-box-shadow");
+
+      // text-shadow value assigned to var
+      var textShadowValue = $("#dynamic").css("text-shadow");
+
+      // print values to screen for the user to copy/paste on their way to
+      // victory
+      $("#border-bottom-left-radius span").html(borderRadiusValue);
+      $("#box-shadow span").html(boxShadowValue);
+      $("#text-shadow span").html(textShadowValue);
+
+  }  // end of refreshFooter()
 
  $(document).ready(function() {
+
+   if ($.browser.webkit) {
+   }
  
+   if ($.browser.mozilla) {
+   }
    var roundedCornersCurrentSliderValue = "";
    var newBoxShadowXInputCurrentSliderValue = "";
    var newBoxShadowYInputCurrentSliderValue = "";
@@ -186,14 +216,19 @@ function checkForInput(inputValue, placeholderValue) {
 
       var newTextShadowValue = postFunctionTextShadowColorValue + " " + postFunctionTextShadowXValue + 
       " " + postFunctionTextShadowYValue + " " + postFunctionTextShadowFadeValue;
-      // old line below here
       // get input value and assign to var
 
       // change the border-radius value of #dynamic
       $("#dynamic").css("border-radius", postFunctionBorderRadiusValue + "px");
 
+       // -moz-border-radius for firefox rounded corners
+      $("#dynamic").css("-moz-border-radius", postFunctionBorderRadiusValue + "px");
+
       // change the -webkit-box-shadow value of #dynamic
-      $("#dynamic").css("webkit-box-shadow", newBoxShadowValue);
+      $("#dynamic").css("-webkit-box-shadow", newBoxShadowValue);
+
+      // change the -moz-box-shadow value of #dynamic
+      $("#dynamic").css("-moz-box-shadow", newBoxShadowValue);
 
       // change the text-shadow value of #dynamic
       $("#dynamic").css("text-shadow", newTextShadowValue);
