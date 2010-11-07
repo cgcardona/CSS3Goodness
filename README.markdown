@@ -42,9 +42,9 @@ TODO
 for either drop shadow or text shadow before the dynamic styling takes effect. I
 need to figure out what is going on here. Place to start is in firebug/webkit js
 debugger.
-- Firefox is currently not dynamically restyling #dynamic in anything other than
-text-shadow. I need to do some fancy footwork here to feed -moz- to firefox for
-the other two styles.
+- I wasn't able to grab the rounded corner value with jQuery to then show at the
+bottom of the page when refreshFooter() is called. I need to dig in deeper and
+figure out why this is/isn't happening
 
 Caveats
 -------
