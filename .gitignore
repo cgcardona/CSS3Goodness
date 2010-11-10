@@ -3,3 +3,7 @@
 
 # OS or Editor folders
 .DS_Store
+
+.sass-cache/
+
+css3buttons/
