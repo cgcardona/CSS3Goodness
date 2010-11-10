@@ -1,0 +1,103 @@
+body {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  background-color: #dddddd; }
+  body .display-none {
+    display: none; }
+  body #container {
+    width: 900px;
+    margin: 20px auto 0;
+    font-weight: 200; }
+    body #container .ribbon {
+      background-color: #968ad8;
+      overflow: hidden;
+      position: absolute;
+      left: -3em;
+      top: 2.5em;
+      -moz-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg); }
+      body #container .ribbon a {
+        border: 1px solid #999999;
+        color: white;
+        display: block;
+        font: bold 81.25% "Helvetiva Neue", Helvetica, Arial, sans-serif;
+        margin: 0.05em 0;
+        padding: 0.5em 3.5em;
+        text-align: center;
+        text-decoration: none; }
+    body #container #header h1 {
+      font-size: 3.25em;
+      text-shadow: #aaaaaa 4px 4px 5px;
+      font-weight: inherit; }
+      body #container #header h1 a {
+        color: black;
+        text-decoration: none; }
+    body #container #left {
+      padding: 20px;
+      float: left;
+      width: 400px; }
+      body #container #left fieldset {
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        padding: 10px;
+        margin: 20px 0; }
+        body #container #left fieldset #rc-one {
+          padding: 5px 10px; }
+        body #container #left fieldset #ds-one {
+          padding: 5px 10px; }
+        body #container #left fieldset #ds-two {
+          padding: 5px 10px; }
+        body #container #left fieldset #ds-three {
+          padding: 5px 10px; }
+        body #container #left fieldset #ds-four {
+          padding: 5px 10px; }
+        body #container #left fieldset #tds-one {
+          padding: 5px 10px; }
+        body #container #left fieldset #tds-two {
+          padding: 5px 10px; }
+        body #container #left fieldset #tds-three {
+          padding: 5px 10px; }
+        body #container #left fieldset #tds-four {
+          padding: 5px 10px; }
+      body #container #left #fs-two {
+        padding-bottom: 20px; }
+      body #container #left #fs-three {
+        padding-bottom: 20px; }
+    body #container #right {
+      padding: 20px;
+      float: right;
+      width: 400px; }
+      body #container #right #dynamic {
+        background-color: #cccccc;
+        padding: 20px;
+        color: black;
+        border-radius: 6px;
+        -moz-border-radius: 6px;
+        -webkit-box-shadow: black 1px 1px 20px;
+        -moz-box-shadow: black 1px 1px 20px;
+        text-shadow: #aaaaaa 1px 1px 1px; }
+        body #container #right #dynamic p {
+          margin: 5px; }
+    body #container #footer {
+      clear: both;
+      padding: 20px;
+      background-color: #cccccc;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #666666;
+      -moz-border-radius: 10px;
+      border-radius: 10px; }
+      body #container #footer h2 {
+        margin-bottom: 10px;
+        font-size: 2.25em;
+        text-shadow: #aaaaaa 4px 4px 5px;
+        font-weight: inherit; }
+      body #container #footer fieldset {
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        padding: 10px;
+        margin: 20px 0; }
+      body #container #footer p {
+        padding: 5px; }
