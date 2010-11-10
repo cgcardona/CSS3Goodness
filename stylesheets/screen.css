@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* line 2, ../src/screen.scss */
+body {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  background-color: #dddddd;
+}
+/* line 6, ../src/screen.scss */
+body .display-none {
+  display: none;
+}
+/* line 9, ../src/screen.scss */
+body #container {
+  width: 900px;
+  margin: 20px auto 0;
+  font-weight: 200;
+}
+/* line 13, ../src/screen.scss */
+body #container .ribbon {
+  background-color: #968ad8;
+  overflow: hidden;
+  position: absolute;
+  left: -3em;
+  top: 2.5em;
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+/* line 21, ../src/screen.scss */
+body #container .ribbon a {
+  border: 1px solid #999999;
+  color: white;
+  display: block;
+  font: bold 81.25% "Helvetiva Neue", Helvetica, Arial, sans-serif;
+  margin: 0.05em 0;
+  padding: 0.5em 3.5em;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 33, ../src/screen.scss */
+body #container #header h1 {
+  font-size: 3.25em;
+  text-shadow: #aaaaaa 4px 4px 5px;
+  font-weight: inherit;
+}
+/* line 37, ../src/screen.scss */
+body #container #header h1 a {
+  color: black;
+  text-decoration: none;
+}
+/* line 43, ../src/screen.scss */
+body #container #left {
+  padding: 20px;
+  float: left;
+  width: 400px;
+}
+/* line 47, ../src/screen.scss */
+body #container #left fieldset {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  padding: 10px;
+  margin: 20px 0;
+}
+/* line 53, ../src/screen.scss */
+body #container #left fieldset #rc-one {
+  padding: 5px 10px;
+}
+/* line 56, ../src/screen.scss */
+body #container #left fieldset #ds-one {
+  padding: 5px 10px;
+}
+/* line 59, ../src/screen.scss */
+body #container #left fieldset #ds-two {
+  padding: 5px 10px;
+}
+/* line 62, ../src/screen.scss */
+body #container #left fieldset #ds-three {
+  padding: 5px 10px;
+}
+/* line 65, ../src/screen.scss */
+body #container #left fieldset #ds-four {
+  padding: 5px 10px;
+}
+/* line 68, ../src/screen.scss */
+body #container #left fieldset #tds-one {
+  padding: 5px 10px;
+}
+/* line 71, ../src/screen.scss */
+body #container #left fieldset #tds-two {
+  padding: 5px 10px;
+}
+/* line 74, ../src/screen.scss */
+body #container #left fieldset #tds-three {
+  padding: 5px 10px;
+}
+/* line 77, ../src/screen.scss */
+body #container #left fieldset #tds-four {
+  padding: 5px 10px;
+}
+/* line 81, ../src/screen.scss */
+body #container #left #fs-two {
+  padding-bottom: 20px;
+}
+/* line 84, ../src/screen.scss */
+body #container #left #fs-three {
+  padding-bottom: 20px;
+}
+/* line 88, ../src/screen.scss */
+body #container #right {
+  padding: 20px;
+  float: right;
+  width: 400px;
+}
+/* line 92, ../src/screen.scss */
+body #container #right #dynamic {
+  background-color: #cccccc;
+  padding: 20px;
+  color: black;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  -moz-box-shadow: black 1px 1px 20px 0;
+  -webkit-box-shadow: black 1px 1px 20px 0;
+  -o-box-shadow: black 1px 1px 20px 0;
+  box-shadow: black 1px 1px 20px 0;
+  text-shadow: #aaaaaa 1px 1px 1px;
+}
+/* line 99, ../src/screen.scss */
+body #container #right #dynamic p {
+  margin: 5px;
+}
+/* line 104, ../src/screen.scss */
+body #container #footer {
+  clear: both;
+  padding: 20px;
+  background-color: #cccccc;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #666666;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 113, ../src/screen.scss */
+body #container #footer h2 {
+  margin-bottom: 10px;
+  font-size: 2.25em;
+  text-shadow: #aaaaaa 4px 4px 5px;
+  font-weight: inherit;
+}
+/* line 119, ../src/screen.scss */
+body #container #footer fieldset {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  padding: 10px;
+  margin: 20px 0;
+}
+/* line 126, ../src/screen.scss */
+body #container #footer p {
+  padding: 5px;
+}
