@@ -116,21 +116,23 @@ body #container #right #dynamic {
   background-color: #cccccc;
   padding: 20px;
   color: black;
-  -webkit-border-radius: 6px 6px;
-  -moz-border-radius: 6px / 6px;
-  -o-border-radius: 6px / 6px;
-  -ms-border-radius: 6px / 6px;
-  -khtml-border-radius: 6px / 6px;
-  border-radius: 6px / 6px;
-  -webkit-box-shadow: black 1px 1px 20px;
-  -moz-box-shadow: black 1px 1px 20px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  -moz-box-shadow: black 1px 1px 20px 0;
+  -webkit-box-shadow: black 1px 1px 20px 0;
+  -o-box-shadow: black 1px 1px 20px 0;
+  box-shadow: black 1px 1px 20px 0;
   text-shadow: #aaaaaa 1px 1px 1px;
 }
-/* line 100, ../src/screen.scss */
+/* line 99, ../src/screen.scss */
 body #container #right #dynamic p {
   margin: 5px;
 }
-/* line 105, ../src/screen.scss */
+/* line 104, ../src/screen.scss */
 body #container #footer {
   clear: both;
   padding: 20px;
@@ -141,14 +143,14 @@ body #container #footer {
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 114, ../src/screen.scss */
+/* line 113, ../src/screen.scss */
 body #container #footer h2 {
   margin-bottom: 10px;
   font-size: 2.25em;
   text-shadow: #aaaaaa 4px 4px 5px;
   font-weight: inherit;
 }
-/* line 120, ../src/screen.scss */
+/* line 119, ../src/screen.scss */
 body #container #footer fieldset {
   border-style: solid;
   border-width: 1px;
@@ -156,7 +158,7 @@ body #container #footer fieldset {
   padding: 10px;
   margin: 20px 0;
 }
-/* line 127, ../src/screen.scss */
+/* line 126, ../src/screen.scss */
 body #container #footer p {
   padding: 5px;
 }
