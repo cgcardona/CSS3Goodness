@@ -93,10 +93,9 @@ body {
         background-color: #cccccc;
         padding: 20px;
         color: black;
-        @include border-radius(6px, 6px);
-        -webkit-box-shadow: black 1px 1px 20px;
-        -moz-box-shadow: black 1px 1px 20px;
-        text-shadow: #aaaaaa 1px 1px 1px;
+        @include border-radius(6px);
+        @include box-shadow(#000, 1px, 1px, 20px);
+        @include text-shadow(#aaaaaa, 1px, 1px, 1px);
         p {
           margin: 5px; 
         } 
