@@ -1,7 +1,7 @@
 body {
   font-family: "helvetica neue", helvetica, arial, sans-serif;
   text-rendering: optimizeLegibility;
-  background-color: #ddd; }
+  background-color: #dddddd; }
   body .display-none {
     display: none; }
   body #container {
@@ -9,7 +9,7 @@ body {
     margin: 20px auto 0;
     font-weight: 200; }
     body #container .ribbon {
-      background-color: #968AD8;
+      background-color: #968ad8;
       overflow: hidden;
       position: absolute;
       left: -3em;
@@ -17,20 +17,20 @@ body {
       -moz-transform: rotate(-45deg);
       -webkit-transform: rotate(-45deg); }
       body #container .ribbon a {
-        border: 1px solid #999;
-        color: #fff;
+        border: 1px solid #999999;
+        color: white;
         display: block;
-        font: bold 81.25% 'Helvetiva Neue', Helvetica, Arial, sans-serif;
+        font: bold 81.25% "Helvetiva Neue", Helvetica, Arial, sans-serif;
         margin: 0.05em 0;
         padding: 0.5em 3.5em;
         text-align: center;
         text-decoration: none; }
     body #container #header h1 {
       font-size: 3.25em;
-      text-shadow: #aaa 4px 4px 5px;
+      text-shadow: #aaaaaa 4px 4px 5px;
       font-weight: inherit; }
       body #container #header h1 a {
-        color: #000;
+        color: black;
         text-decoration: none; }
     body #container #left {
       padding: 20px;
@@ -39,7 +39,7 @@ body {
       body #container #left fieldset {
         border-style: solid;
         border-width: 1px;
-        border-color: #000;
+        border-color: black;
         padding: 10px;
         margin: 20px 0; }
         body #container #left fieldset #rc-one {
@@ -69,34 +69,34 @@ body {
       float: right;
       width: 400px; }
       body #container #right #dynamic {
-        background-color: #ccc;
+        background-color: #cccccc;
         padding: 20px;
-        color: #000;
+        color: black;
         border-radius: 6px;
         -moz-border-radius: 6px;
-        -webkit-box-shadow: #000 1px 1px 20px;
-        -moz-box-shadow: #000 1px 1px 20px;
-        text-shadow: #aaa 1px 1px 1px; }
+        -webkit-box-shadow: black 1px 1px 20px;
+        -moz-box-shadow: black 1px 1px 20px;
+        text-shadow: #aaaaaa 1px 1px 1px; }
         body #container #right #dynamic p {
           margin: 5px; }
     body #container #footer {
       clear: both;
       padding: 20px;
-      background-color: #ccc;
+      background-color: #cccccc;
       border-style: solid;
       border-width: 1px;
-      border-color: #666;
+      border-color: #666666;
       -moz-border-radius: 10px;
       border-radius: 10px; }
       body #container #footer h2 {
         margin-bottom: 10px;
         font-size: 2.25em;
-        text-shadow: #aaa 4px 4px 5px;
+        text-shadow: #aaaaaa 4px 4px 5px;
         font-weight: inherit; }
       body #container #footer fieldset {
         border-style: solid;
         border-width: 1px;
-        border-color: #000;
+        border-color: black;
         padding: 10px;
         margin: 20px 0; }
       body #container #footer p {
