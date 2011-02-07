@@ -12,13 +12,14 @@ function checkForInput(inputValue, placeholderValue) {
    // get #dynamic's current style's and assign them to vars
    if ($.browser.webkit) {
       var borderRadiusValue = $("#dynamic").css("border-top-left-radius");
+      var boxShadowValue = $("#dynamic").css("-webkit-box-shadow");
    }
  
    if ($.browser.mozilla) {
       var borderRadiusValue = $("#dynamic").css("-moz-border-radius");
+      var boxShadowValue = $("#dynamic").css("-moz-box-shadow");
    }
       // box-shadow value assigned to vars
-      var boxShadowValue = $("#dynamic").css("-webkit-box-shadow");
 
       // text-shadow value assigned to var
       var textShadowValue = $("#dynamic").css("text-shadow");
